@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Input, Button, Text } from "../form/styles/Styled-form";
+import { Container, Input, Button, Text, Frame } from "../form/styles/Styled-form";
 
 export default function Form({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -19,4 +19,8 @@ Form.Button = function FormButton({ children, ...restProps }) {
 
 Form.Text = function FormText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
+};
+
+Form.Frame = function FormFrame({ children, ...restProps }) {
+  return <Frame {...restProps}>{children}</Frame>;
 };
