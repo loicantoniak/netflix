@@ -6,3 +6,5 @@ export {default as Header} from "./header";
 export {default as Feature} from "./feature";
 export {default as SignForm} from "./signForm";
 export {default as Profiles} from "./profiles";
+export {default as ManageProfiles} from "./manage";
+export {default as Loading} from "./loading";

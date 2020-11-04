@@ -16,12 +16,21 @@ export default function selectProfileContainer({ user, setProfile }) {
       <Profiles>
         <Profiles.Title>Qui est-ce ?</Profiles.Title>
         <Profiles.List>
-          <Profiles.User>
+          <Profiles.User
+            onClick={() =>
+              setProfile({
+                displayName: user.displayName,
+                photoURL: user.photoURL,
+              })
+            }
+          >
             <Profiles.Picture src={user.photoURL} />
             <Profiles.Name>{user.displayName}</Profiles.Name>
           </Profiles.User>
         </Profiles.List>
-        <Profiles.ButtonLink to={ROUTES.MANAGEPROFILES}>Gérer les profils</Profiles.ButtonLink>
+        <Profiles.ButtonLink to={ROUTES.MANAGEPROFILES}>
+          Gérer les profils
+        </Profiles.ButtonLink>
       </Profiles>
     </>
   );
