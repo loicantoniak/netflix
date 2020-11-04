@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import ManageProfilesContainer from "../containers/manageProfiles";
+
 
 export default function ManageProfiles() {
-    return (
-        <div>
-            
-        </div>
-    )
+
+  return <ManageProfilesContainer  />;
 }
